@@ -6,6 +6,10 @@ const User = require("./modal/user");
 // const bcrypt = require("bcrypt");
 const app = express();
 app.use(express.json());
+app.use(cors({ 
+    origin: "https://master--stunning-donut-2ba164.netlify.app/", 
+    credentials: true 
+}));
 
 mongoose.connect("mongodb+srv://Cluster71972:patu2772@cluster71972.odih9tz.mongodb.net/Notes",{useNewUrlParser:true}, {useUnifiedTopology:true}, ()=>{
     console.log("connected to mongodb");
