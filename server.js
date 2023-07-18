@@ -11,6 +11,11 @@ app.use(cors({
     origin: "https://master--stunning-donut-2ba164.netlify.app/", 
     credentials: true 
 }));
+app.use(function (request, response, next) {
+  response.header("Access-Control-Allow-Origin", "*");
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 mongoose.connect("mongodb+srv://Cluster71972:patu2772@cluster71972.odih9tz.mongodb.net/Notes",{useNewUrlParser:true}, {useUnifiedTopology:true}, ()=>{
     console.log("connected to mongodb");
