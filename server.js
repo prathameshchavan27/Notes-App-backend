@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors({ 
-    origin: "https://master--stunning-donut-2ba164.netlify.app/", 
+    origin: "https://master--stunning-donut-2ba164.netlify.app", 
     credentials: true 
 }));
 app.use(function (request, response, next) {
