@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "modal": "^1.2.0",
+    "package-lock.json": "^1.0.0",
+    "server.js": "^1.0.0"
+  }
+}
