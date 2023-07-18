@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Note = require('./modal/note');
-const router = require("express").Router();
+// const router = require("express").Router();
 const User = require("./modal/user");
-const bcrypt = require("bcrypt");
+// const bcrypt = require("bcrypt");
 const app = express();
 app.use(express.json());
 
