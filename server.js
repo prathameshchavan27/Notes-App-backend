@@ -4,6 +4,7 @@ const Note = require('./modal/note');
 // const router = require("express").Router();
 const User = require("./modal/user");
 // const bcrypt = require("bcrypt");
+const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors({ 
